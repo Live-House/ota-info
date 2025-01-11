@@ -1,15 +1,40 @@
-• Merged r27 (Jan P6 tag) (fixes flicker when unlocking)
-• Added statusbar clock position setting
-• Added a switch to force small keyguard clock
-• Added internet tile to secure tiles
-• Made location tile be affected by the secure tiles switch
-• Correctly list all secure tiles in settings
-• Gaming macro: Added night light & brightness level
-• Gaming macro: Only restore enabled settings
-• Gaming macro: Don't stay on when rebooting
-• OpenDelta: Fixed reboot is still pending after it's already done
-• Launcher3: Fixed header protection height calculation
-• Made auto brightness preference observe actual values in runtime
-• Fixed location indicator randomly changing positions
-• Toggle location indicator on runtime (no reboot)
-• A few other all around improvements
+ROM:
+• Merged r10 (AKA Jan SPL)
+• Other improvements
+
+Device:
+• Improve haptic and vibe patterns
+• overlay: Update vibration patterns
+• overlay: Set max network scan search time to 254
+• overlay: Switch back to AOSP-defined color modes
+• rro_overlays: Support A/B OTA perf mode
+• Refresh Rate: Configure props and allow overwrites
+• props: Enable display touch idle optimization
+• Set `vendor.display.idle_time` to 1100ms
+• Introduce XiaomiDolby
+• vintf: Add missing Dolby FCM HAL
+• Revert "Build xiaomi-telephony-stub"
+• Revert "Disable redir_party_num"
+• Powerhint: Fix cpu_dma_latency value
+• powerhint: Decrease launch boost to 3sec
+• powerhint: set /dev/cpu_dma_latency value in hex
+• Move usage of USB MTP/PTP functionality with USB F_FS driver
+• Migrate to QTI USB Gadget AIDL HAL
+• sepolicy: Drop duplicated wakeup nodes
+• Setup DeviceAsWebcam
+• Set TARGET_USES_YCRCB_VENUS_CAMERA_ENCODE
+• rootdir: Make less cores available for background tasks
+• Add `TARGET_NO_OEM_UNLOCK` flag
+• rootdir: Remove IO read_ahead_kb tune
+• wlan: Enable Optimized Power Management
+• rootdir: Always use LZ4 ZRAM compression
+• overlay: Allow more cached apps in the background
+• Align kernel config with target device
+• powerhint: Decrease GPU launch boost to 3s
+• Setup EROFS (GAPPS uses EROFS, VANILLA uses ext4)
+• overlay: Add maintainer/kernel name and TG
+• Move kernel config to common tree
+• set config_defaultRefreshRateInZone
+• Update blobs from OS1.0.3.0.TKHMIXM (But don't use this firmware)
+• Build variant changed from userdebug to user
+• Fix battery cycle count
